@@ -59,8 +59,7 @@ body{
   text-align: center;
   padding: 16px 16px;
   text-decoration: none;
-  font-size: px;
-  margin: 10px;
+  font-size: 20px;
 }
 
 /* Change the color of links on hover */
@@ -119,5 +118,5 @@ body{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #2c43c4;
+  background-color: #362e52;
 }
