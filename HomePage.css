@@ -89,6 +89,7 @@ body{
 .dropdown {
   position: relative;
   display: inline-block;
+  justify-content: space-between;
 }
 
 /* Dropdown Content (Hidden by Default) */
