@@ -7,10 +7,21 @@
   
   
   
+<<<<<<< HEAD
+  <!-- Getting the jQuery script You will need to activate the API and get your own key from appengine.google.com -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxFAtxirTXk6_cChWL9fF4MMFATeAs3mE"></script>
+  <!-- This is our script -->
+=======
    <!--Getting the jQuery script You will need to activate the API and get your own key from appengine.google.com -->
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key="></script>
    <!--This is our script -->
+>>>>>>> 203300b37b4e1f9e9c47cfca6b591e82d3574ee7
   
+  
+  <script>
+    var address = "{{address_from_python_dict}}";
+    console.log("address: ",address);
+  </script>
   
   <script type="text/javascript" src="scripts/script.js"></script>
    <!--And finally our script -->
@@ -123,8 +134,13 @@
 <p>Helpline provides information and refferal to spport groups in the county for teens, families and friends of alcholic. Support groups in English and in Spanish.</p>
 
 <br>
+<<<<<<< HEAD
 
 <!--fourth-->
+=======
+<img class="al2" src="https://www.aamonterey.org/wp-content/uploads/2017/12/AA-mtg-otter-group-2802-Saratoga-Ct-Marina-CA.jpg">
+<br>
+>>>>>>> 11bb6b37e838652dacfbae42146ce92b34ecc3cd
 <h1>Narcotics Anonymous</h1>
 
 <p>Salinas Tel (831) 758-1630</p>
@@ -137,9 +153,13 @@
 
 <p>Helpline provides information and referral to support groups in the county for teens, families and friends of alcoholics. Support groups in English and in Spanish.</p>
 
+<img class="al3" src="https://www.aamonterey.org/wp-content/uploads/2017/12/aa-meeting-carmel-valley-ca-community-church-monterey-peninsula.jpg">
 <br>
+<<<<<<< HEAD
 
 <!--fifth-->
+=======
+>>>>>>> 11bb6b37e838652dacfbae42146ce92b34ecc3cd
 <h1>Naranon</h1>
 
 <p>Website: <a href = "www.naranoncentralca.org"> www.naranoncentralca.org</p></a>
@@ -164,6 +184,7 @@
 <p>A worldwide fellowship offering hope and recovery for those affected by someone else's addiction. Meeting in Carmel, Monterey, and Salinas. Check the website for details.</p>
 
 <br>
+<img class="al4" src="https://www.cos.edu/en-us/Foster-Care/PublishingImages/Business-Full-011.jpg">
 
 <!--seventh-->
 <h1>Foster and Kinship Care Education</h1>
@@ -244,18 +265,8 @@
 
 <!--google maps-->
 </body>
+
 <div id="general_container">
-    <div id="form_container">
-      
-      
-      <form method="post" id="address_form" class="user_form">
-        <label>Or would you prefer to use an address?</label><input id="address" name="address" type="text"/>
-        <input name="submit_button" type="submit" id="address_submit" class="submit_btn"/>
-      </form>
-    
-    </div>
-    
-    
     <br>
     <div id="map-container">
       <div id="map-canvas">

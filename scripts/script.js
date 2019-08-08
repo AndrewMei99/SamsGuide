@@ -104,9 +104,9 @@ function GeotagAddress(search_address) {
 // Handler for the "address" form.
 function CenterOnAddress(e){
     ClearMarkers();  // Remove markers if any
-    e.preventDefault();  // We don't want this form to reset the page.
+    //e.preventDefault();  // We don't want this form to reset the page.
     console.log('Address submitted');
-    var address = $('#address').val();
+    //var address = $('#address').val();
     if (address === "") {
       console.log("Not valid");
       window.alert("Need a valid address!")
@@ -140,12 +140,18 @@ function initialize() {
 // The google Map frame has a number of events like any other HTML element.
 // Here we set an handler to inialize the map when the map loads. You can
 // add listeners for "click", "move" and so on...
-google.maps.event.addDomListener(window, 'load', initialize);
+
+
+//google.maps.event.addDomListener(window, 'load', initialize);
 
 $(document).ready(
+  // function() {
+  //   $('#coord_form').on('submit', CenterOnCoords);
+  //   $('#address_form').on('submit', CenterOnAddress);
+  //   console.log("done");
+  // }
   function() {
-    $('#coord_form').on('submit', CenterOnCoords);
-    $('#address_form').on('submit', CenterOnAddress);
-    console.log("done");
+    initialize();
+    CenterOnAddress();
   }
 );
