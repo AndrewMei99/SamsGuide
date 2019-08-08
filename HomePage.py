@@ -28,9 +28,30 @@ class AlcoholDrugCounceling(webapp2.RequestHandler):
     def get(self):
         alcohol_template = the_jinja_env.get_template("alcohol.html")
         self.response.write(alcohol_template.render())
-    
+class DomesticViolence(webapp2.RequestHandler):
+    def get(self):
+        domestic_template = the_jinja_env.get_template('domestic.html')
+        self.response.write(domestic_template.render())
+class ChildProtectives(webapp2.RequestHandler):
+    def get(self):
+        child_template = the_jinja_env.get_template('child.html')
+        self.response.write(child_template.render())
+class HealthCareServices(webapp2.RequestHandler):
+    def get(self):
+        health_template = the_jinja_env.get_template('healthcare.html')
+        self.response.write(health_template.render())
+class FoodDistribution(webapp2.RequestHandler):
+    def get(self):
+        food_template = the_jinja_env.get_template('food.html')
+        self.response.write(food_template.render())
+        
+        
     
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/AlcoholDrugCounceling', AlcoholDrugCounceling),
+    ('/DomesticViolence', DomesticViolence),
+    ('/ChildProtectives', ChildProtectives), 
+    ('/HealthCareServices', HealthCareServices),
+    ('/FoodDistribution', FoodDistribution),
 ], debug=True)
