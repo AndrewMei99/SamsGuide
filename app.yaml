@@ -4,10 +4,16 @@ threadsafe: true
 
 handlers:
 
+- url: /styles
+  static_dir: styles
+  
 - url: /scripts
-static_dir: scripts
+  static_dir: scripts
+
 - url: /.*
-  script: main.app
+  script: HomePage.app
+  
+
   
 libraries:
 - name: webapp2
