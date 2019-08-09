@@ -17,19 +17,19 @@
 body{
     background-color: #CCDEE2;
 }  
-/*  #cf {*/
-/*  position:relative;*/
-/*  height:281px;*/
-/*  width:450px;*/
-/*  margin:0 auto;*/
-/*}*/
 
+/*Images used on our app*/
 .top {
   display: block;
   margin-left: auto;
   margin-right: auto;
+<<<<<<< HEAD
   width: 900px;
   height: 545px;
+=======
+  width: 1200px;
+  height:545px;
+>>>>>>> 23657ee0ab80ab1deeb5525532f26a66599b94ee
 }
 .bottom{
   width: 4%;
@@ -39,6 +39,7 @@ body{
   padding-left: 20px;
   margin-top: 5px;
   }
+  
 .al{
   width: 250px;
   height: 250px;
@@ -46,25 +47,24 @@ body{
   padding-left:950px;
   }
   
-  .al2{
+.al2{
   width: 250px;
   height: 200px;
   position: absolute;
   padding-left:950px;
   }
-  .al3{
+.al3{
   width: 200px;
   height: 150px;
   position: absolute;
   padding-left:950px;
   }
-  .al4{
+.al4{
   width: 200px;
   height: 150px;
   position: absolute;
   padding-left:950px;
   }
-
 
 #nb {
     width: 100%;
@@ -92,9 +92,8 @@ body{
 
   font-size: 40px;
   padding-top:7px;
-
-
 }
+
 
 /* Change the color of links on hover */
 .Nav a:hover {
