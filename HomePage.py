@@ -33,8 +33,11 @@ class AlcoholDrugCounceling(webapp2.RequestHandler):
         self.response.write(alcohol_template.render(myDict))
 class DomesticViolence(webapp2.RequestHandler):
     def get(self):
+        DomDict = {
+            'DomesticAdresses':'142 W. Alisal Street; Salinas, CA 93901 1441 Constitution Blvd.; Salinas, CA 93906 20 East Alisal, Salinas, CA 93905 236 Monterey Street; Salinas, CA 93901 433 Salinas Street; Salinas, CA 93901 1178 Broadway; Seaside, CA 93955 3785 Via Nona Marie, Carmel, CA 93923'
+        }
         domestic_template = the_jinja_env.get_template('domestic.html')
-        self.response.write(domestic_template.render())
+        self.response.write(domestic_template.render(DomDict))
 class ChildProtectives(webapp2.RequestHandler):
     def get(self):
         child_template = the_jinja_env.get_template('child.html')
