@@ -23,7 +23,8 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 900px
+  width: 1200px;
+  height:545px;
 }
 .bottom{
   width: 4%;
@@ -59,7 +60,6 @@ body{
   position: absolute;
   padding-left:950px;
   }
-
 
 #nb {
     width: 100%;
