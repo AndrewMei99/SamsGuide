@@ -23,13 +23,8 @@ body{
   display: block;
   margin-left: auto;
   margin-right: auto;
-<<<<<<< HEAD
-  width: 900px;
-  height: 545px;
-=======
-  width: 1200px;
-  height:545px;
->>>>>>> 23657ee0ab80ab1deeb5525532f26a66599b94ee
+  width: 1400px;
+  height:800px;
 }
 .bottom{
   width: 4%;
